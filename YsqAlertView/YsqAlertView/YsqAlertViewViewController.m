@@ -68,6 +68,8 @@
     
     
     alert.type = AlertViewWithTable;
+    alert.cellAccessoryType = AlertViewCellWithAccessoryView;
+    alert.cellInitSelectIndex = 3;
 //    alert.tableViewCellBgColor = someColor;
 //    alert.tableViewCellFontColor = someColor;
 //    alert.tableViewCellTouchColor = someColor;
