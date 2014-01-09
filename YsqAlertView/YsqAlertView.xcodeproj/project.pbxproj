@@ -1,0 +1,538 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9E41FE3A187E46A40026CF2E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E41FE39187E46A40026CF2E /* Foundation.framework */; };
+		9E41FE3C187E46A40026CF2E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E41FE3B187E46A40026CF2E /* CoreGraphics.framework */; };
+		9E41FE3E187E46A40026CF2E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E41FE3D187E46A40026CF2E /* UIKit.framework */; };
+		9E41FE44187E46A40026CF2E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9E41FE42187E46A40026CF2E /* InfoPlist.strings */; };
+		9E41FE46187E46A40026CF2E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E41FE45187E46A40026CF2E /* main.m */; };
+		9E41FE4A187E46A40026CF2E /* YsqAlertViewAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E41FE49187E46A40026CF2E /* YsqAlertViewAppDelegate.m */; };
+		9E41FE4D187E46A40026CF2E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E41FE4B187E46A40026CF2E /* Main.storyboard */; };
+		9E41FE50187E46A40026CF2E /* YsqAlertViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E41FE4F187E46A40026CF2E /* YsqAlertViewViewController.m */; };
+		9E41FE52187E46A40026CF2E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9E41FE51187E46A40026CF2E /* Images.xcassets */; };
+		9E41FE59187E46A40026CF2E /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E41FE58187E46A40026CF2E /* XCTest.framework */; };
+		9E41FE5A187E46A40026CF2E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E41FE39187E46A40026CF2E /* Foundation.framework */; };
+		9E41FE5B187E46A40026CF2E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E41FE3D187E46A40026CF2E /* UIKit.framework */; };
+		9E41FE63187E46A40026CF2E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9E41FE61187E46A40026CF2E /* InfoPlist.strings */; };
+		9E41FE65187E46A40026CF2E /* YsqAlertViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E41FE64187E46A40026CF2E /* YsqAlertViewTests.m */; };
+		9E41FE99187E56220026CF2E /* cellSelected.png in Resources */ = {isa = PBXBuildFile; fileRef = 9E41FE8B187E56220026CF2E /* cellSelected.png */; };
+		9E41FE9A187E56220026CF2E /* cellSelected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9E41FE8C187E56220026CF2E /* cellSelected@2x.png */; };
+		9E41FE9B187E56220026CF2E /* cellUnselected.png in Resources */ = {isa = PBXBuildFile; fileRef = 9E41FE8D187E56220026CF2E /* cellUnselected.png */; };
+		9E41FE9C187E56220026CF2E /* cellUnselected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9E41FE8E187E56220026CF2E /* cellUnselected@2x.png */; };
+		9E41FE9D187E56220026CF2E /* checkbox.png in Resources */ = {isa = PBXBuildFile; fileRef = 9E41FE8F187E56220026CF2E /* checkbox.png */; };
+		9E41FE9E187E56220026CF2E /* checkbox@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9E41FE90187E56220026CF2E /* checkbox@2x.png */; };
+		9E41FE9F187E56220026CF2E /* checkbox_selected.png in Resources */ = {isa = PBXBuildFile; fileRef = 9E41FE91187E56220026CF2E /* checkbox_selected.png */; };
+		9E41FEA0187E56220026CF2E /* checkbox_selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9E41FE92187E56220026CF2E /* checkbox_selected@2x.png */; };
+		9E41FEA1187E56220026CF2E /* close.png in Resources */ = {isa = PBXBuildFile; fileRef = 9E41FE93187E56220026CF2E /* close.png */; };
+		9E41FEA2187E56220026CF2E /* close@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9E41FE94187E56220026CF2E /* close@2x.png */; };
+		9E41FEA3187E56220026CF2E /* loading.png in Resources */ = {isa = PBXBuildFile; fileRef = 9E41FE95187E56220026CF2E /* loading.png */; };
+		9E41FEA4187E56220026CF2E /* loading@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9E41FE96187E56220026CF2E /* loading@2x.png */; };
+		9E41FEA5187E56220026CF2E /* YsqAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E41FE98187E56220026CF2E /* YsqAlertView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9E41FE5C187E46A40026CF2E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9E41FE2E187E46A40026CF2E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9E41FE35187E46A40026CF2E;
+			remoteInfo = YsqAlertView;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9E41FE36187E46A40026CF2E /* YsqAlertView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YsqAlertView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9E41FE39187E46A40026CF2E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		9E41FE3B187E46A40026CF2E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		9E41FE3D187E46A40026CF2E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		9E41FE41187E46A40026CF2E /* YsqAlertView-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "YsqAlertView-Info.plist"; sourceTree = "<group>"; };
+		9E41FE43187E46A40026CF2E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		9E41FE45187E46A40026CF2E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9E41FE47187E46A40026CF2E /* YsqAlertView-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "YsqAlertView-Prefix.pch"; sourceTree = "<group>"; };
+		9E41FE48187E46A40026CF2E /* YsqAlertViewAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YsqAlertViewAppDelegate.h; sourceTree = "<group>"; };
+		9E41FE49187E46A40026CF2E /* YsqAlertViewAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YsqAlertViewAppDelegate.m; sourceTree = "<group>"; };
+		9E41FE4C187E46A40026CF2E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9E41FE4E187E46A40026CF2E /* YsqAlertViewViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YsqAlertViewViewController.h; sourceTree = "<group>"; };
+		9E41FE4F187E46A40026CF2E /* YsqAlertViewViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YsqAlertViewViewController.m; sourceTree = "<group>"; };
+		9E41FE51187E46A40026CF2E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		9E41FE57187E46A40026CF2E /* YsqAlertViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YsqAlertViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9E41FE58187E46A40026CF2E /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		9E41FE60187E46A40026CF2E /* YsqAlertViewTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "YsqAlertViewTests-Info.plist"; sourceTree = "<group>"; };
+		9E41FE62187E46A40026CF2E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		9E41FE64187E46A40026CF2E /* YsqAlertViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YsqAlertViewTests.m; sourceTree = "<group>"; };
+		9E41FE8B187E56220026CF2E /* cellSelected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cellSelected.png; sourceTree = "<group>"; };
+		9E41FE8C187E56220026CF2E /* cellSelected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cellSelected@2x.png"; sourceTree = "<group>"; };
+		9E41FE8D187E56220026CF2E /* cellUnselected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cellUnselected.png; sourceTree = "<group>"; };
+		9E41FE8E187E56220026CF2E /* cellUnselected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cellUnselected@2x.png"; sourceTree = "<group>"; };
+		9E41FE8F187E56220026CF2E /* checkbox.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = checkbox.png; sourceTree = "<group>"; };
+		9E41FE90187E56220026CF2E /* checkbox@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "checkbox@2x.png"; sourceTree = "<group>"; };
+		9E41FE91187E56220026CF2E /* checkbox_selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = checkbox_selected.png; sourceTree = "<group>"; };
+		9E41FE92187E56220026CF2E /* checkbox_selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "checkbox_selected@2x.png"; sourceTree = "<group>"; };
+		9E41FE93187E56220026CF2E /* close.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = close.png; sourceTree = "<group>"; };
+		9E41FE94187E56220026CF2E /* close@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "close@2x.png"; sourceTree = "<group>"; };
+		9E41FE95187E56220026CF2E /* loading.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = loading.png; sourceTree = "<group>"; };
+		9E41FE96187E56220026CF2E /* loading@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "loading@2x.png"; sourceTree = "<group>"; };
+		9E41FE97187E56220026CF2E /* YsqAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YsqAlertView.h; sourceTree = "<group>"; };
+		9E41FE98187E56220026CF2E /* YsqAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YsqAlertView.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9E41FE33187E46A40026CF2E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9E41FE3C187E46A40026CF2E /* CoreGraphics.framework in Frameworks */,
+				9E41FE3E187E46A40026CF2E /* UIKit.framework in Frameworks */,
+				9E41FE3A187E46A40026CF2E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9E41FE54187E46A40026CF2E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9E41FE59187E46A40026CF2E /* XCTest.framework in Frameworks */,
+				9E41FE5B187E46A40026CF2E /* UIKit.framework in Frameworks */,
+				9E41FE5A187E46A40026CF2E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9E41FE2D187E46A40026CF2E = {
+			isa = PBXGroup;
+			children = (
+				9E41FE3F187E46A40026CF2E /* YsqAlertView */,
+				9E41FE5E187E46A40026CF2E /* YsqAlertViewTests */,
+				9E41FE38187E46A40026CF2E /* Frameworks */,
+				9E41FE37187E46A40026CF2E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9E41FE37187E46A40026CF2E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9E41FE36187E46A40026CF2E /* YsqAlertView.app */,
+				9E41FE57187E46A40026CF2E /* YsqAlertViewTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9E41FE38187E46A40026CF2E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9E41FE39187E46A40026CF2E /* Foundation.framework */,
+				9E41FE3B187E46A40026CF2E /* CoreGraphics.framework */,
+				9E41FE3D187E46A40026CF2E /* UIKit.framework */,
+				9E41FE58187E46A40026CF2E /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9E41FE3F187E46A40026CF2E /* YsqAlertView */ = {
+			isa = PBXGroup;
+			children = (
+				9E41FE8A187E56220026CF2E /* ClassAndImage */,
+				9E41FE4E187E46A40026CF2E /* YsqAlertViewViewController.h */,
+				9E41FE4F187E46A40026CF2E /* YsqAlertViewViewController.m */,
+				9E41FE4B187E46A40026CF2E /* Main.storyboard */,
+				9E41FE51187E46A40026CF2E /* Images.xcassets */,
+				9E41FE40187E46A40026CF2E /* Supporting Files */,
+			);
+			path = YsqAlertView;
+			sourceTree = "<group>";
+		};
+		9E41FE40187E46A40026CF2E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9E41FE48187E46A40026CF2E /* YsqAlertViewAppDelegate.h */,
+				9E41FE49187E46A40026CF2E /* YsqAlertViewAppDelegate.m */,
+				9E41FE41187E46A40026CF2E /* YsqAlertView-Info.plist */,
+				9E41FE42187E46A40026CF2E /* InfoPlist.strings */,
+				9E41FE45187E46A40026CF2E /* main.m */,
+				9E41FE47187E46A40026CF2E /* YsqAlertView-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9E41FE5E187E46A40026CF2E /* YsqAlertViewTests */ = {
+			isa = PBXGroup;
+			children = (
+				9E41FE64187E46A40026CF2E /* YsqAlertViewTests.m */,
+				9E41FE5F187E46A40026CF2E /* Supporting Files */,
+			);
+			path = YsqAlertViewTests;
+			sourceTree = "<group>";
+		};
+		9E41FE5F187E46A40026CF2E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9E41FE60187E46A40026CF2E /* YsqAlertViewTests-Info.plist */,
+				9E41FE61187E46A40026CF2E /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9E41FE8A187E56220026CF2E /* ClassAndImage */ = {
+			isa = PBXGroup;
+			children = (
+				9E41FE8B187E56220026CF2E /* cellSelected.png */,
+				9E41FE8C187E56220026CF2E /* cellSelected@2x.png */,
+				9E41FE8D187E56220026CF2E /* cellUnselected.png */,
+				9E41FE8E187E56220026CF2E /* cellUnselected@2x.png */,
+				9E41FE8F187E56220026CF2E /* checkbox.png */,
+				9E41FE90187E56220026CF2E /* checkbox@2x.png */,
+				9E41FE91187E56220026CF2E /* checkbox_selected.png */,
+				9E41FE92187E56220026CF2E /* checkbox_selected@2x.png */,
+				9E41FE93187E56220026CF2E /* close.png */,
+				9E41FE94187E56220026CF2E /* close@2x.png */,
+				9E41FE95187E56220026CF2E /* loading.png */,
+				9E41FE96187E56220026CF2E /* loading@2x.png */,
+				9E41FE97187E56220026CF2E /* YsqAlertView.h */,
+				9E41FE98187E56220026CF2E /* YsqAlertView.m */,
+			);
+			path = ClassAndImage;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9E41FE35187E46A40026CF2E /* YsqAlertView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9E41FE68187E46A40026CF2E /* Build configuration list for PBXNativeTarget "YsqAlertView" */;
+			buildPhases = (
+				9E41FE32187E46A40026CF2E /* Sources */,
+				9E41FE33187E46A40026CF2E /* Frameworks */,
+				9E41FE34187E46A40026CF2E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YsqAlertView;
+			productName = YsqAlertView;
+			productReference = 9E41FE36187E46A40026CF2E /* YsqAlertView.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9E41FE56187E46A40026CF2E /* YsqAlertViewTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9E41FE6B187E46A40026CF2E /* Build configuration list for PBXNativeTarget "YsqAlertViewTests" */;
+			buildPhases = (
+				9E41FE53187E46A40026CF2E /* Sources */,
+				9E41FE54187E46A40026CF2E /* Frameworks */,
+				9E41FE55187E46A40026CF2E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9E41FE5D187E46A40026CF2E /* PBXTargetDependency */,
+			);
+			name = YsqAlertViewTests;
+			productName = YsqAlertViewTests;
+			productReference = 9E41FE57187E46A40026CF2E /* YsqAlertViewTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9E41FE2E187E46A40026CF2E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = YsqAlertView;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = ysq;
+				TargetAttributes = {
+					9E41FE56187E46A40026CF2E = {
+						TestTargetID = 9E41FE35187E46A40026CF2E;
+					};
+				};
+			};
+			buildConfigurationList = 9E41FE31187E46A40026CF2E /* Build configuration list for PBXProject "YsqAlertView" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9E41FE2D187E46A40026CF2E;
+			productRefGroup = 9E41FE37187E46A40026CF2E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9E41FE35187E46A40026CF2E /* YsqAlertView */,
+				9E41FE56187E46A40026CF2E /* YsqAlertViewTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9E41FE34187E46A40026CF2E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9E41FE99187E56220026CF2E /* cellSelected.png in Resources */,
+				9E41FE9F187E56220026CF2E /* checkbox_selected.png in Resources */,
+				9E41FEA0187E56220026CF2E /* checkbox_selected@2x.png in Resources */,
+				9E41FEA4187E56220026CF2E /* loading@2x.png in Resources */,
+				9E41FE52187E46A40026CF2E /* Images.xcassets in Resources */,
+				9E41FE44187E46A40026CF2E /* InfoPlist.strings in Resources */,
+				9E41FE9B187E56220026CF2E /* cellUnselected.png in Resources */,
+				9E41FEA3187E56220026CF2E /* loading.png in Resources */,
+				9E41FEA1187E56220026CF2E /* close.png in Resources */,
+				9E41FE9A187E56220026CF2E /* cellSelected@2x.png in Resources */,
+				9E41FE4D187E46A40026CF2E /* Main.storyboard in Resources */,
+				9E41FEA2187E56220026CF2E /* close@2x.png in Resources */,
+				9E41FE9D187E56220026CF2E /* checkbox.png in Resources */,
+				9E41FE9C187E56220026CF2E /* cellUnselected@2x.png in Resources */,
+				9E41FE9E187E56220026CF2E /* checkbox@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9E41FE55187E46A40026CF2E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9E41FE63187E46A40026CF2E /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9E41FE32187E46A40026CF2E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9E41FE4A187E46A40026CF2E /* YsqAlertViewAppDelegate.m in Sources */,
+				9E41FEA5187E56220026CF2E /* YsqAlertView.m in Sources */,
+				9E41FE50187E46A40026CF2E /* YsqAlertViewViewController.m in Sources */,
+				9E41FE46187E46A40026CF2E /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9E41FE53187E46A40026CF2E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9E41FE65187E46A40026CF2E /* YsqAlertViewTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9E41FE5D187E46A40026CF2E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9E41FE35187E46A40026CF2E /* YsqAlertView */;
+			targetProxy = 9E41FE5C187E46A40026CF2E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9E41FE42187E46A40026CF2E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9E41FE43187E46A40026CF2E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		9E41FE4B187E46A40026CF2E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9E41FE4C187E46A40026CF2E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9E41FE61187E46A40026CF2E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9E41FE62187E46A40026CF2E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9E41FE66187E46A40026CF2E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		9E41FE67187E46A40026CF2E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9E41FE69187E46A40026CF2E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "YsqAlertView/YsqAlertView-Prefix.pch";
+				INFOPLIST_FILE = "YsqAlertView/YsqAlertView-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		9E41FE6A187E46A40026CF2E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "YsqAlertView/YsqAlertView-Prefix.pch";
+				INFOPLIST_FILE = "YsqAlertView/YsqAlertView-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		9E41FE6C187E46A40026CF2E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/YsqAlertView.app/YsqAlertView";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "YsqAlertView/YsqAlertView-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "YsqAlertViewTests/YsqAlertViewTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		9E41FE6D187E46A40026CF2E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/YsqAlertView.app/YsqAlertView";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "YsqAlertView/YsqAlertView-Prefix.pch";
+				INFOPLIST_FILE = "YsqAlertViewTests/YsqAlertViewTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9E41FE31187E46A40026CF2E /* Build configuration list for PBXProject "YsqAlertView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9E41FE66187E46A40026CF2E /* Debug */,
+				9E41FE67187E46A40026CF2E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9E41FE68187E46A40026CF2E /* Build configuration list for PBXNativeTarget "YsqAlertView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9E41FE69187E46A40026CF2E /* Debug */,
+				9E41FE6A187E46A40026CF2E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		9E41FE6B187E46A40026CF2E /* Build configuration list for PBXNativeTarget "YsqAlertViewTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9E41FE6C187E46A40026CF2E /* Debug */,
+				9E41FE6D187E46A40026CF2E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9E41FE2E187E46A40026CF2E /* Project object */;
+}
